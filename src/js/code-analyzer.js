@@ -58,7 +58,7 @@ const parseFor = (forToParse) => {
     elements.push({line:forToParse.test.loc.start.line, type:forToParse.type ,name:'',condition:'for('.concat(forToParse.init.expr,';',forToParse.test.expr,';',forToParse.update.expr,(')')),value:''});
     Parse[forToParse.body.type](forToParse.body);
 };
-/*------------------------------------------------------------------------------- Main Parser ---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------- Return Parser ---------------------------------------------------------------------------------------------------------------------------------------------------*/
 const parseReturn =(returnToParse) =>{
     elements.push({line:returnToParse.loc.start.line, type:returnToParse.type ,name:'',condition:'',value:returnToParse.expr});
 };
