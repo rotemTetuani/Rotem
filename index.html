@@ -56,7 +56,39 @@
                 </td>
             </tr>
         </table>
-
+        <table id="table" class="paleBlueRows"></table>
+        <style>
+            table.paleBlueRows {
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                border: solid #FFFFFF;
+                background-color: #FFD5C0;
+                text-align: center;
+                border-collapse: collapse;
+            }
+            table.paleBlueRows td, table.paleBlueRows th {
+                border: solid #FFFAF5;
+                padding: 3px 2px;
+            }
+            table.paleBlueRows tbody td {
+                font-size: 12px;
+            }
+            table.paleBlueRows tr:nth-child(even) {
+                background: #DAC1E2;
+            }
+            table.paleBlueRows thead {
+                background: #AF56BA;
+                border-bottom: 5px solid #FFFFFF;
+            }
+            table.paleBlueRows thead th {
+                font-size: 13px;
+                font-weight: bold;
+                color: #FFFFFF;
+                text-align: center;
+            }
+            table.paleBlueRows tfoot td {
+                font-size: 14px;
+            }
+        </style>
         <script src="dist/bundle.js"></script>
     </body>
 </html>
